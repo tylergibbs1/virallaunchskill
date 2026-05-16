@@ -1,0 +1,4 @@
+interface:
+  display_name: "Viral Launch Pipeline"
+  short_description: "Research-driven X launch pipeline"
+  default_prompt: "Use $viral-launch-pipeline to research, position, write, critique, and finalize an X launch for my product."

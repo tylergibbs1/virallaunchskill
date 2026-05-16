@@ -1,0 +1,20 @@
+{
+  "name": "viral-launchskill",
+  "interface": {
+    "displayName": "Viral Launch Skills"
+  },
+  "plugins": [
+    {
+      "name": "viral-launch-pipeline",
+      "source": {
+        "source": "local",
+        "path": "./plugins/viral-launch-pipeline"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}

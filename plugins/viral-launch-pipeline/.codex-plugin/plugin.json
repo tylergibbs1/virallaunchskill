@@ -1,0 +1,38 @@
+{
+  "name": "viral-launch-pipeline",
+  "version": "0.1.0",
+  "description": "Research-driven product launch workflow for X/Twitter positioning, hooks, scripts, critique, and distribution.",
+  "author": {
+    "name": "Tyler Gibbs",
+    "url": "https://github.com/tylergibbs1"
+  },
+  "homepage": "https://github.com/tylergibbs1/virallaunchskill",
+  "repository": "https://github.com/tylergibbs1/virallaunchskill",
+  "license": "MIT",
+  "keywords": [
+    "launch",
+    "marketing",
+    "positioning",
+    "twitter",
+    "x",
+    "copywriting"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Viral Launch Pipeline",
+    "shortDescription": "Research-driven X launch workflow",
+    "longDescription": "Runs a research-first launch workflow that turns product details into market evidence, bold claims, hooks, demo narrative, critique history, a final X launch post or script, and a distribution plan.",
+    "developerName": "Tyler Gibbs",
+    "category": "Productivity",
+    "capabilities": [
+      "Research",
+      "Write"
+    ],
+    "defaultPrompt": [
+      "Use $viral-launch-pipeline for my product launch.",
+      "Create a bold claim and X launch script.",
+      "Critique and strengthen this launch post."
+    ],
+    "brandColor": "#111827"
+  }
+}
