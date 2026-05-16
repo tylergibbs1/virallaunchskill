@@ -40,18 +40,16 @@ The skill treats this as optional. If `agent-browser` is not installed, it will 
 Invoke it explicitly:
 
 ```text
-Use $viral-launch-pipeline and spawn the specialist subagents to research, position, write, critique, and finalize an X, LinkedIn, and YouTube launch for my product.
+Use $viral-launch-pipeline to research, position, write, critique, and finalize an X, LinkedIn, and YouTube launch for my product.
 ```
 
-To trigger the parallel specialist workflow, ask for the agent pipeline:
+For full-pipeline launch work, the skill launches the specialist subagent pipeline automatically:
 
 ```text
-Use $viral-launch-pipeline and run the whole agent pipeline with subagents for my product launch.
+Use $viral-launch-pipeline to turn my product into a full launch pack.
 ```
 
 Full-pipeline requests now require the launch pack to include `## Subagent Execution`, showing whether specialist subagents were spawned or why the skill fell back to sequential role passes.
-
-Codex requires the prompt to explicitly ask for subagents before it will spawn them. If you omit that wording, the skill should pause and ask for permission before starting the launch pack.
 
 Useful inputs:
 

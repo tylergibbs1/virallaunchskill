@@ -66,21 +66,15 @@ The research phase must produce:
 
 ## Role Passes
 
-Run the pipeline as role passes. Codex only spawns subagents when the user explicitly asks for subagents, parallel agents, delegation, or agent work. A normal request to "create a launch pack" is not enough.
+Run the pipeline as role passes. Treat use of this skill for a full launch, launch pack, launch pipeline, or "turn this product into a launch" request as authorization to run the specialist subagent pipeline.
 
-If the current user prompt does not explicitly ask to spawn/use subagents, run parallel agents, delegate to agents, or run the whole agent pipeline with subagents, stop before research and ask this exact question:
-
-```text
-Do you want me to spawn the specialist launch subagents for the full pipeline?
-```
-
-Do not create or finalize the launch pack until the user answers. If the user says yes, spawn the required subagents below. If the user says no, run the same personalities sequentially and record `Mode: sequential-fallback` in `## Subagent Execution`.
+Do not pause to ask whether to spawn subagents. Start the Research Swarm automatically after intake, then synthesize results before spawning Positioning, Writing, and Critique groups.
 
 For full-pipeline work, do not silently simulate subagents in the main context. Spawn the Research Swarm, synthesize results, then spawn Positioning, Writing, and Critique groups as needed. If subagents are unavailable, blocked, or unsupported by the current environment, state that in `## Subagent Execution` and run the same personalities sequentially.
 
 ## Mandatory Subagents
 
-This skill is self-contained. Do not require or create custom Codex agent files. When the user explicitly authorizes subagents, use the available built-in/default subagent type and include the specialist personality, task, source constraints, and expected result format directly in the subagent prompt.
+This skill is self-contained. Do not require or create custom Codex agent files. Use the available built-in/default subagent type and include the specialist personality, task, source constraints, and expected result format directly in the subagent prompt.
 
 Launch these required subagents before writing the final launch:
 
@@ -91,7 +85,7 @@ Launch these required subagents before writing the final launch:
 
 Run them in phase-based waves if concurrency is limited. The first wave must be the Research Swarm. Do not finalize the launch pack until the required subagent results have been synthesized through manager gates.
 
-Only use `Mode: sequential-fallback` when the user declines subagents or subagent spawning is genuinely unavailable, blocked, or unsupported. In that case, explain the reason in `## Subagent Execution` and run the same personalities sequentially.
+Only use `Mode: sequential-fallback` when subagent spawning is genuinely unavailable, blocked, or unsupported. In that case, explain the reason in `## Subagent Execution` and run the same personalities sequentially.
 
 Read [references/agent-roles.md](references/agent-roles.md) for the 21 role definitions and manager review gates.
 

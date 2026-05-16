@@ -10,7 +10,7 @@
 
 ## Trigger Rule
 
-Spawn subagents when the user asks for a launch, launch pipeline, full pipeline, whole pipeline, agent pipeline, 21-agent pipeline, agents, subagents, or parallel research. Treat those phrases as explicit authorization for subagent work.
+Spawn subagents automatically when this skill is used for a launch, launch pack, launch pipeline, full pipeline, whole pipeline, agent pipeline, 21-agent pipeline, or parallel research. Treat invocation of the skill for launch work as authorization for subagent work.
 
 This skill is self-contained. Do not require custom agent TOML files, global Codex agent setup, or user-local agent edits. Use the available built-in/default subagent type and put the personality instructions directly in the subagent task prompt.
 

@@ -12,7 +12,7 @@
 
 ## Operating Rule
 
-These are role passes with distinct personalities. Use real subagents when the user asks for agents, subagents, parallel work, the 21-agent pipeline, or the whole agent pipeline. Otherwise run the same personalities sequentially in the main context. Each role returns concise findings, a score when applicable, and concrete edits.
+These are role passes with distinct personalities. For full launch pipeline work, run them as real subagents automatically. Only run the same personalities sequentially in the main context when subagent spawning is unavailable, blocked, or unsupported. Each role returns concise findings, a score when applicable, and concrete edits.
 
 ## Subagent Orchestration
 
