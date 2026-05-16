@@ -3,7 +3,7 @@
 ## Contents
 
 - Evidence rules
-- Optional browser automation
+- Tool order
 - Source map
 - Search patterns
 - Research output
@@ -11,16 +11,19 @@
 ## Evidence Rules
 
 - Browse for current market, competitor, and launch examples unless the user asks not to.
+- Prefer built-in web search/browsing tools when they are available.
 - Cite sources for market claims, competitor claims, metrics, and launch examples.
 - Separate observed evidence from inference.
 - Do not fabricate customer language. Quote sparingly and attribute.
 - Prefer first-party pages, docs, changelogs, customer reviews, Reddit/forum posts, YouTube transcripts, X posts, Product Hunt, app marketplaces, and credible news.
 
-## Optional Browser Automation
+## Tool Order
 
-Use `agent-browser` for source-heavy research when available, especially for X posts, Reddit/forum threads, YouTube pages, Product Hunt launches, competitor pages, and screenshot-backed evidence.
+1. Use built-in web search/browsing tools first for normal source discovery, source opening, and citation collection.
+2. Use `agent-browser` for hard-to-reach sources: pages that block normal fetches, require interaction, need logged-in/session navigation, rely on client-side rendering, or need screenshots/accessibility snapshots for evidence.
+3. If both are unavailable, continue with whatever search tools are available and clearly note source limitations.
 
-Check first:
+When `agent-browser` would help, check first:
 
 ```bash
 command -v agent-browser
@@ -33,7 +36,7 @@ npm install -g agent-browser
 agent-browser install
 ```
 
-Suggested commands:
+Suggested `agent-browser` commands:
 
 ```bash
 agent-browser open https://example.com
@@ -42,7 +45,7 @@ agent-browser screenshot source.png
 agent-browser close
 ```
 
-Use snapshots to extract compact page structure and refs. Record URLs and summarize findings in the Evidence Map. If browser automation is unavailable or the user declines installation, continue with normal search and browsing.
+Use snapshots to extract compact page structure and refs. Record URLs and summarize findings in the Evidence Map. If browser automation is unavailable or the user declines installation, fall back to built-in web/search tools.
 
 ## Source Map
 

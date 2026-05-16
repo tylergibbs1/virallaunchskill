@@ -39,9 +39,9 @@ If critical product details are missing, ask only for the minimum needed to proc
 
 ## Research
 
-Use current web research unless the user explicitly provides all source material or asks not to browse. Read [references/research-sources.md](references/research-sources.md) for source types, search patterns, and evidence rules.
+Use current web research unless the user explicitly provides all source material or asks not to browse. Prefer built-in web search/browsing tools when available. Read [references/research-sources.md](references/research-sources.md) for source types, search patterns, and evidence rules.
 
-For deep source collection, use `agent-browser` when it is already installed. If unavailable and browser automation would materially improve the research, ask before installing global tools; otherwise continue with available web/search tools.
+Use `agent-browser` only when built-in web tools cannot reach a source reliably, when the page requires interaction, or when screenshot-backed/source-page inspection would materially improve the research. If unavailable, ask before installing global tools.
 
 The research phase must produce:
 
