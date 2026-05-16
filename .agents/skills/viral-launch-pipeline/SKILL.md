@@ -41,6 +41,8 @@ If critical product details are missing, ask only for the minimum needed to proc
 
 Use current web research unless the user explicitly provides all source material or asks not to browse. Read [references/research-sources.md](references/research-sources.md) for source types, search patterns, and evidence rules.
 
+For deep source collection, use `agent-browser` when it is already installed. If unavailable and browser automation would materially improve the research, ask before installing global tools; otherwise continue with available web/search tools.
+
 The research phase must produce:
 
 - Market pain points in customer language

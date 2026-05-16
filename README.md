@@ -22,6 +22,17 @@ $skill-installer https://github.com/tylergibbs1/virallaunchskill/tree/main/.agen
 
 Restart Codex after install if the skill does not appear immediately.
 
+## Optional Browser Research
+
+For heavier launch research, install `agent-browser` so the skill can inspect source pages, X posts, Reddit/forum threads, YouTube pages, Product Hunt launches, and competitor sites with compact snapshots:
+
+```bash
+npm install -g agent-browser
+agent-browser install
+```
+
+The skill treats this as optional. If `agent-browser` is not installed, it will continue with normal web/search tools.
+
 ## Use
 
 Invoke it explicitly:

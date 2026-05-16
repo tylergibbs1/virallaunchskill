@@ -3,6 +3,7 @@
 ## Contents
 
 - Evidence rules
+- Optional browser automation
 - Source map
 - Search patterns
 - Research output
@@ -14,6 +15,34 @@
 - Separate observed evidence from inference.
 - Do not fabricate customer language. Quote sparingly and attribute.
 - Prefer first-party pages, docs, changelogs, customer reviews, Reddit/forum posts, YouTube transcripts, X posts, Product Hunt, app marketplaces, and credible news.
+
+## Optional Browser Automation
+
+Use `agent-browser` for source-heavy research when available, especially for X posts, Reddit/forum threads, YouTube pages, Product Hunt launches, competitor pages, and screenshot-backed evidence.
+
+Check first:
+
+```bash
+command -v agent-browser
+```
+
+If missing, do not install automatically. Ask the user before running:
+
+```bash
+npm install -g agent-browser
+agent-browser install
+```
+
+Suggested commands:
+
+```bash
+agent-browser open https://example.com
+agent-browser snapshot -i
+agent-browser screenshot source.png
+agent-browser close
+```
+
+Use snapshots to extract compact page structure and refs. Record URLs and summarize findings in the Evidence Map. If browser automation is unavailable or the user declines installation, continue with normal search and browsing.
 
 ## Source Map
 
