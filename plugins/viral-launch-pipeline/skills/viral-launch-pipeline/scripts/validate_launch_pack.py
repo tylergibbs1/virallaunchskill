@@ -12,6 +12,7 @@ REQUIRED_HEADINGS = [
     "## Executive Summary",
     "## Assumptions and Placeholders",
     "## Research Summary",
+    "## Subagent Execution",
     "## Positioning",
     "### Bold Claim",
     "## Hook Iterations",
@@ -57,6 +58,9 @@ def main() -> int:
     source_links = re.findall(r"https?://\S+", text)
     if "## Research Summary" in text and len(source_links) < 2:
         warnings.append("Research Summary has fewer than 2 URL citations.")
+
+    if "Mode: sequential-fallback" in text and "Reason:" not in text:
+        errors.append("Subagent Execution uses sequential-fallback but has no Reason field.")
 
     lower = text.lower()
     for phrase in WEAK_PHRASES:

@@ -47,6 +47,8 @@ To trigger the parallel specialist workflow, ask for the agent pipeline:
 Use $viral-launch-pipeline and run the whole agent pipeline with subagents for my product launch.
 ```
 
+Full-pipeline requests now require the launch pack to include `## Subagent Execution`, showing whether specialist subagents were spawned or why the skill fell back to sequential role passes.
+
 Useful inputs:
 
 - Product name and URL

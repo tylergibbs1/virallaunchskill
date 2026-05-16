@@ -24,6 +24,18 @@ Use this structure for the final deliverable.
 ### Competitor/Category Opening
 [Where the launch can counter-position.]
 
+## Subagent Execution
+Mode: spawned | sequential-fallback
+Reason:
+- [If sequential-fallback, explain why subagents did not run.]
+Spawned groups:
+- Research Swarm:
+- Positioning Room:
+- Writing Room:
+- Critique Room:
+Key imported findings:
+- ...
+
 ## Positioning
 ### Bold Claim
 [Selected claim.]

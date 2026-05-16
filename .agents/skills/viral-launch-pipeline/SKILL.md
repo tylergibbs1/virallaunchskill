@@ -16,6 +16,7 @@ Success means the user receives a usable launch pack with:
 - A source-backed bold claim that is specific, defensible, and non-generic.
 - Platform-native launch drafts for the requested channels.
 - A short evidence trail showing what informed the angle.
+- A subagent execution log when a full pipeline is requested.
 - Clear critique notes showing what was rejected or rewritten.
 - Validation completed or a clear explanation of what could not be checked.
 
@@ -65,7 +66,9 @@ The research phase must produce:
 
 ## Role Passes
 
-Run the pipeline as role passes. When the user asks for agents, subagents, parallel research, the 21-agent pipeline, or the whole agent pipeline, spawn specialist subagents with the personalities in [references/subagent-orchestration.md](references/subagent-orchestration.md). If subagents are unavailable, execute the same personalities sequentially yourself.
+Run the pipeline as role passes. When the user asks for a launch, launch pipeline, full pipeline, whole pipeline, agent pipeline, 21-agent pipeline, agents, subagents, or parallel research, treat that as authorization to spawn specialist subagents with the personalities in [references/subagent-orchestration.md](references/subagent-orchestration.md).
+
+For full-pipeline work, do not silently simulate subagents in the main context. Spawn the Research Swarm, synthesize results, then spawn Positioning, Writing, and Critique groups as needed. If subagents are unavailable, blocked, or unsupported by the current environment, state that in `## Subagent Execution` and run the same personalities sequentially.
 
 Read [references/agent-roles.md](references/agent-roles.md) for the 21 role definitions and manager review gates.
 
@@ -100,6 +103,7 @@ Use [references/output-pack.md](references/output-pack.md) as the final structur
 Always include:
 
 - Research summary with sources
+- Subagent execution log
 - Positioning options and selected bold claim
 - Hook iterations with scores
 - Final X/Twitter post or thread, LinkedIn launch post, and/or YouTube launch script

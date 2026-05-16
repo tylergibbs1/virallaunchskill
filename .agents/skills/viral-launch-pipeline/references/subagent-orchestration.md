@@ -10,9 +10,11 @@
 
 ## Trigger Rule
 
-Spawn subagents when the user asks for agents, subagents, parallel research, the 21-agent pipeline, or the whole agent pipeline. If subagents are unavailable, run these same personalities sequentially.
+Spawn subagents when the user asks for a launch, launch pipeline, full pipeline, whole pipeline, agent pipeline, 21-agent pipeline, agents, subagents, or parallel research. Treat those phrases as explicit authorization for subagent work.
 
-Do not spawn all 21 agents at once. Use phase-based groups, wait for results, synthesize, then launch the next group only if needed.
+Do not spawn all 21 agents at once. Use phase-based groups, wait for results, synthesize, then launch the next group only if needed. If subagents cannot be spawned, record the reason in `## Subagent Execution` and run the same personalities sequentially.
+
+For full-pipeline launch work, the default first spawn is the Research Swarm. Do not skip directly to writing unless the user already supplied complete research and positioning.
 
 ## Spawn Groups
 
@@ -146,3 +148,23 @@ Next subagents to spawn:
 ```
 
 The parent agent owns final judgment. Subagents supply evidence, options, and critique; they do not decide the final launch alone.
+
+## Execution Log
+
+Always include this section in the final launch pack:
+
+```markdown
+## Subagent Execution
+Mode: spawned | sequential-fallback
+Reason:
+- ...
+Spawned groups:
+- Research Swarm: Market Anthropologist, Underground Listener, Outlier Archivist, Enemy Mapper, Founder Mythmaker
+- Positioning Room: ...
+- Writing Room: ...
+- Critique Room: ...
+Key imported findings:
+- ...
+```
+
+If `Mode` is `sequential-fallback`, the `Reason` must explain why subagents did not run.
