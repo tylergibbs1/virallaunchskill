@@ -80,14 +80,16 @@ For full-pipeline work, do not silently simulate subagents in the main context. 
 
 ## Mandatory Subagents
 
-When the user explicitly authorizes subagents, launch these required subagents before writing the final launch:
+This skill is self-contained. Do not require or create custom Codex agent files. When the user explicitly authorizes subagents, use the available built-in/default subagent type and include the specialist personality, task, source constraints, and expected result format directly in the subagent prompt.
+
+Launch these required subagents before writing the final launch:
 
 - **Research Swarm**: Market Anthropologist, Underground Listener, Outlier Archivist, Enemy Mapper, Founder Mythmaker.
 - **Positioning Room**: Novelty Hunter, Claim Blacksmith, Category Rebel, Proof Broker.
 - **Writing Room**: Hook Assassin, Narrative Architect, Demo Director, Launch Copywriter.
 - **Critique Room**: Hook Prosecutor, Weapons Inspector, Plainspoken Parent, Market Skeptic.
 
-Run them in phase-based waves if concurrency is limited. Do not finalize the launch pack until the required subagent results have been synthesized through manager gates.
+Run them in phase-based waves if concurrency is limited. The first wave must be the Research Swarm. Do not finalize the launch pack until the required subagent results have been synthesized through manager gates.
 
 Only use `Mode: sequential-fallback` when the user declines subagents or subagent spawning is genuinely unavailable, blocked, or unsupported. In that case, explain the reason in `## Subagent Execution` and run the same personalities sequentially.
 

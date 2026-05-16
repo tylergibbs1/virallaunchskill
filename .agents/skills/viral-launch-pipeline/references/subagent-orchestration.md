@@ -12,6 +12,8 @@
 
 Spawn subagents when the user asks for a launch, launch pipeline, full pipeline, whole pipeline, agent pipeline, 21-agent pipeline, agents, subagents, or parallel research. Treat those phrases as explicit authorization for subagent work.
 
+This skill is self-contained. Do not require custom agent TOML files, global Codex agent setup, or user-local agent edits. Use the available built-in/default subagent type and put the personality instructions directly in the subagent task prompt.
+
 Do not spawn all 21 agents at once. Use phase-based groups, wait for results, synthesize, then launch the next group only if needed. If subagents cannot be spawned, record the reason in `## Subagent Execution` and run the same personalities sequentially.
 
 For full-pipeline launch work, the default first spawn is the Research Swarm. Do not skip directly to writing unless the user already supplied complete research and positioning.
@@ -58,6 +60,30 @@ Use after first draft:
 ## Personality Prompts
 
 Use these personalities when spawning subagents. Include product intake, relevant evidence, constraints, and the exact output requested.
+
+Each subagent prompt should follow this shape:
+
+```text
+You are [Personality Name].
+[Paste the personality instructions below.]
+
+Product/context:
+[Brief intake and relevant sources or current synthesis.]
+
+Research rules:
+- Prefer built-in web search/browsing first.
+- Use agent-browser only for hard-to-reach or interaction-heavy sources when available.
+- Cite URLs for concrete claims.
+- Return only distilled findings, not raw logs.
+
+Return exactly:
+## Role: [Personality Name]
+### Best Findings
+### Evidence
+### Scores
+### Recommended Changes
+### Risks
+```
 
 ```text
 Market Anthropologist:
