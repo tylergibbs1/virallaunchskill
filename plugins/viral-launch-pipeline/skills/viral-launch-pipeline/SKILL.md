@@ -66,13 +66,21 @@ The research phase must produce:
 
 ## Role Passes
 
-Run the pipeline as role passes. When the user asks for a launch, launch pipeline, full pipeline, whole pipeline, agent pipeline, 21-agent pipeline, agents, subagents, or parallel research, treat that as authorization to spawn specialist subagents with the personalities in [references/subagent-orchestration.md](references/subagent-orchestration.md).
+Run the pipeline as role passes. Codex only spawns subagents when the user explicitly asks for subagents, parallel agents, delegation, or agent work. A normal request to "create a launch pack" is not enough.
+
+If the current user prompt does not explicitly ask to spawn/use subagents, run parallel agents, delegate to agents, or run the whole agent pipeline with subagents, stop before research and ask this exact question:
+
+```text
+Do you want me to spawn the specialist launch subagents for the full pipeline?
+```
+
+Do not create or finalize the launch pack until the user answers. If the user says yes, spawn the required subagents below. If the user says no, run the same personalities sequentially and record `Mode: sequential-fallback` in `## Subagent Execution`.
 
 For full-pipeline work, do not silently simulate subagents in the main context. Spawn the Research Swarm, synthesize results, then spawn Positioning, Writing, and Critique groups as needed. If subagents are unavailable, blocked, or unsupported by the current environment, state that in `## Subagent Execution` and run the same personalities sequentially.
 
 ## Mandatory Subagents
 
-For any request to create or finalize a launch pack, treat the user’s request as an explicit request to run the subagent workflow. If subagent tools are available, launch these required subagents before writing the final launch:
+When the user explicitly authorizes subagents, launch these required subagents before writing the final launch:
 
 - **Research Swarm**: Market Anthropologist, Underground Listener, Outlier Archivist, Enemy Mapper, Founder Mythmaker.
 - **Positioning Room**: Novelty Hunter, Claim Blacksmith, Category Rebel, Proof Broker.
@@ -81,7 +89,7 @@ For any request to create or finalize a launch pack, treat the user’s request 
 
 Run them in phase-based waves if concurrency is limited. Do not finalize the launch pack until the required subagent results have been synthesized through manager gates.
 
-Only use `Mode: sequential-fallback` when subagent spawning is genuinely unavailable, blocked, or unsupported. In that case, explain the reason in `## Subagent Execution` and run the same personalities sequentially.
+Only use `Mode: sequential-fallback` when the user declines subagents or subagent spawning is genuinely unavailable, blocked, or unsupported. In that case, explain the reason in `## Subagent Execution` and run the same personalities sequentially.
 
 Read [references/agent-roles.md](references/agent-roles.md) for the 21 role definitions and manager review gates.
 
