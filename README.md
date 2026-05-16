@@ -1,12 +1,20 @@
 # Viral Launch Pipeline
 
+[![skills.sh](https://skills.sh/b/tylergibbs1/virallaunchskill)](https://skills.sh/tylergibbs1/virallaunchskill)
+
 A Codex skill and plugin for building research-driven X/Twitter product launches.
 
 The skill runs a full launch workflow: intake, market research, customer-language mining, competitor positioning, bold-claim extraction, hook writing, demo narrative, critique passes, weapons check, and final launch-pack validation.
 
 ## Install
 
-In Codex, run:
+Install with the open skills CLI:
+
+```bash
+npx skills add tylergibbs1/virallaunchskill --skill viral-launch-pipeline -y
+```
+
+Or install directly in Codex with `$skill-installer`:
 
 ```text
 $skill-installer https://github.com/tylergibbs1/virallaunchskill/tree/main/.agents/skills/viral-launch-pipeline
