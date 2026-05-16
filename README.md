@@ -1,6 +1,6 @@
 # Viral Launch Pipeline
 
-[![skills.sh](https://skills.sh/b/tylergibbs1/virallaunchskill)](https://skills.sh/tylergibbs1/virallaunchskill)
+[![Install Skill](https://img.shields.io/badge/install-npx%20skills%20add-111827)](#install)
 
 A Codex skill and plugin for building research-driven X/Twitter product launches.
 
