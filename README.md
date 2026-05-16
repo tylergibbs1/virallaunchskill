@@ -41,6 +41,12 @@ Invoke it explicitly:
 Use $viral-launch-pipeline to research, position, write, critique, and finalize an X launch for my product.
 ```
 
+To trigger the parallel specialist workflow, ask for the agent pipeline:
+
+```text
+Use $viral-launch-pipeline and run the whole agent pipeline with subagents for my product launch.
+```
+
 Useful inputs:
 
 - Product name and URL

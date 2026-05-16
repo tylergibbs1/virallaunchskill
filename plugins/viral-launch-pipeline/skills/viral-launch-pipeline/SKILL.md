@@ -53,7 +53,7 @@ The research phase must produce:
 
 ## Role Passes
 
-Run the pipeline as role passes. If the environment supports delegated agents and the user explicitly requested or approved parallel agent work, assign independent research/critique roles to subagents; otherwise execute the role passes sequentially yourself.
+Run the pipeline as role passes. When the user asks for agents, subagents, parallel research, the 21-agent pipeline, or the whole agent pipeline, spawn specialist subagents with the personalities in [references/subagent-orchestration.md](references/subagent-orchestration.md). If subagents are unavailable, execute the same personalities sequentially yourself.
 
 Read [references/agent-roles.md](references/agent-roles.md) for the 21 role definitions and manager review gates.
 

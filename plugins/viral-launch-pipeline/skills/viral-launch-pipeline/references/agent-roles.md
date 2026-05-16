@@ -3,6 +3,7 @@
 ## Contents
 
 - Operating rule
+- Subagent orchestration
 - Research roles
 - Positioning roles
 - Writing roles
@@ -11,7 +12,11 @@
 
 ## Operating Rule
 
-These are role passes, not mandatory separate processes. Run them sequentially unless delegated agent work is available and explicitly requested or approved. Each role returns concise findings, a score when applicable, and concrete edits.
+These are role passes with distinct personalities. Use real subagents when the user asks for agents, subagents, parallel work, the 21-agent pipeline, or the whole agent pipeline. Otherwise run the same personalities sequentially in the main context. Each role returns concise findings, a score when applicable, and concrete edits.
+
+## Subagent Orchestration
+
+For concrete spawn groups, personalities, and prompt templates, read [subagent-orchestration.md](subagent-orchestration.md). Do not spawn all 21 agents blindly. Spawn only the independent agents needed for the current phase, then synthesize results through manager gates.
 
 ## Research Roles
 
