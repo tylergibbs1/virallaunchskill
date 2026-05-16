@@ -59,6 +59,12 @@ def main() -> int:
     if "## Research Summary" in text and len(source_links) < 2:
         warnings.append("Research Summary has fewer than 2 URL citations.")
 
+    if "## Subagent Execution" in text:
+        if "Mode: spawned" not in text and "Mode: sequential-fallback" not in text:
+            errors.append("Subagent Execution must declare Mode: spawned or Mode: sequential-fallback.")
+        if "Spawned groups:" not in text:
+            errors.append("Subagent Execution must include Spawned groups.")
+
     if "Mode: sequential-fallback" in text and "Reason:" not in text:
         errors.append("Subagent Execution uses sequential-fallback but has no Reason field.")
 

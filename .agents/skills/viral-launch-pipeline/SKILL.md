@@ -70,6 +70,19 @@ Run the pipeline as role passes. When the user asks for a launch, launch pipelin
 
 For full-pipeline work, do not silently simulate subagents in the main context. Spawn the Research Swarm, synthesize results, then spawn Positioning, Writing, and Critique groups as needed. If subagents are unavailable, blocked, or unsupported by the current environment, state that in `## Subagent Execution` and run the same personalities sequentially.
 
+## Mandatory Subagents
+
+For any request to create or finalize a launch pack, treat the user’s request as an explicit request to run the subagent workflow. If subagent tools are available, launch these required subagents before writing the final launch:
+
+- **Research Swarm**: Market Anthropologist, Underground Listener, Outlier Archivist, Enemy Mapper, Founder Mythmaker.
+- **Positioning Room**: Novelty Hunter, Claim Blacksmith, Category Rebel, Proof Broker.
+- **Writing Room**: Hook Assassin, Narrative Architect, Demo Director, Launch Copywriter.
+- **Critique Room**: Hook Prosecutor, Weapons Inspector, Plainspoken Parent, Market Skeptic.
+
+Run them in phase-based waves if concurrency is limited. Do not finalize the launch pack until the required subagent results have been synthesized through manager gates.
+
+Only use `Mode: sequential-fallback` when subagent spawning is genuinely unavailable, blocked, or unsupported. In that case, explain the reason in `## Subagent Execution` and run the same personalities sequentially.
+
 Read [references/agent-roles.md](references/agent-roles.md) for the 21 role definitions and manager review gates.
 
 Minimum required gates:
