@@ -14,7 +14,7 @@ REQUIRED_HEADINGS = [
     "## Positioning",
     "### Bold Claim",
     "## Hook Iterations",
-    "## Final X Launch",
+    "## Final Launch Drafts",
     "## Weapons Check",
     "## Distribution Plan",
     "## Human Edit Notes",
@@ -62,9 +62,9 @@ def main() -> int:
         if phrase in lower:
             warnings.append(f"Generic launch phrase found: {phrase!r}")
 
-    final_section = text.split("## Final X Launch", 1)[-1] if "## Final X Launch" in text else ""
+    final_section = text.split("## Final Launch Drafts", 1)[-1] if "## Final Launch Drafts" in text else ""
     if len(final_section.strip()) < 280:
-        warnings.append("Final X Launch section looks short; ensure it is a usable launch draft.")
+        warnings.append("Final Launch Drafts section looks short; ensure it contains usable platform-specific launch copy.")
 
     if errors:
         print("INVALID")

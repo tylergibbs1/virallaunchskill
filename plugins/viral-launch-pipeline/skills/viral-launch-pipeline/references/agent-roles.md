@@ -25,7 +25,7 @@ For concrete spawn groups, personalities, and prompt templates, read [subagent-o
 3. **Customer Language Agent**: Mines first-party customer phrasing, pain words, objections, desired outcomes, and emotional stakes.
 4. **Reddit/Forum Agent**: Finds unfiltered complaints, workarounds, comparisons, and anti-patterns in user communities.
 5. **YouTube Outlier Agent**: Studies outlier titles/openings/demos in the category and adjacent categories.
-6. **X Launch Archive Agent**: Finds similar successful and failed X launches; extracts hook, claim, proof, and format patterns.
+6. **Social Launch Archive Agent**: Finds similar successful and failed X and LinkedIn launches; extracts hook, claim, proof, and format patterns.
 7. **Competitor Agent**: Maps competitor claims, sameness, weak spots, and credible counter-positioning openings.
 8. **Founder Story Agent**: Identifies origin story, enemy, insight, risk, or obsession that can make the launch feel human.
 
@@ -41,7 +41,7 @@ For concrete spawn groups, personalities, and prompt templates, read [subagent-o
 13. **Hook Agent**: Writes at least 20 first-line hooks across formats: direct claim, enemy, impossible demo, before/after, contrarian, founder insight.
 14. **Narrative Agent**: Builds the launch arc: old world, tension, breakthrough, demo, proof, implications, CTA.
 15. **Demo Flow Agent**: Converts product workflow into a visual sequence where each beat proves the bold claim.
-16. **Post Agent**: Writes the X post/thread in a sharp, human voice without generic SaaS language.
+16. **Post Agent**: Writes X threads/posts and LinkedIn launch posts in platform-native voice without generic SaaS language.
 17. **Script Agent**: Writes voiceover and shot list for launch video when relevant.
 
 ## Critique Roles

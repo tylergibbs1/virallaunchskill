@@ -36,8 +36,15 @@ Use this structure for the final deliverable.
 | Hook | Score | Notes |
 |---|---:|---|
 
-## Final X Launch
-[Final post or thread.]
+## Platform Strategy
+[Target X/Twitter, LinkedIn, or both. Explain how the angle changes by platform.]
+
+## Final Launch Drafts
+### X/Twitter
+[Final post or thread. Omit only if not requested.]
+
+### LinkedIn
+[Final LinkedIn launch post. Omit only if not requested.]
 
 ## Demo/Video Script
 | Beat | Visual | Voiceover/Text | Purpose |
@@ -52,6 +59,8 @@ Use this structure for the final deliverable.
 - Founder/employee support:
 - Reply strategy:
 - Quote-post angles:
+- LinkedIn comment/repost strategy:
+- LinkedIn founder/company page coordination:
 - Communities and channels:
 - Follow-up posts:
 

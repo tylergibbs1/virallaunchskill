@@ -15,7 +15,7 @@
 - Cite sources for market claims, competitor claims, metrics, and launch examples.
 - Separate observed evidence from inference.
 - Do not fabricate customer language. Quote sparingly and attribute.
-- Prefer first-party pages, docs, changelogs, customer reviews, Reddit/forum posts, YouTube transcripts, X posts, Product Hunt, app marketplaces, and credible news.
+- Prefer first-party pages, docs, changelogs, customer reviews, Reddit/forum posts, YouTube transcripts, X posts, LinkedIn posts, Product Hunt, app marketplaces, and credible news.
 
 ## Tool Order
 
@@ -54,7 +54,7 @@ Use the most relevant sources for the category:
 - Company: homepage, docs, blog, changelog, demo videos, founder posts, case studies.
 - Competitors: positioning pages, comparison pages, pricing, reviews, changelogs.
 - Customer language: Reddit, Hacker News, G2/Capterra, app reviews, Discord/forum excerpts supplied by user, support docs, public comments.
-- Viral patterns: X launches in adjacent categories, Product Hunt top launches, YouTube outlier videos, high-engagement demo posts.
+- Viral patterns: X launches, LinkedIn launches, Product Hunt top launches, YouTube outlier videos, high-engagement demo posts, and founder/company launch narratives in adjacent categories.
 - Category context: analyst posts, benchmark reports, news, keyword trends when available.
 
 ## Search Patterns
@@ -63,10 +63,13 @@ Run targeted searches such as:
 
 ```text
 "[category]" "launch" "X" OR "Twitter"
+"[category]" "launch" "LinkedIn"
+"[product type]" "launch" "LinkedIn" "founder"
 "[competitor]" "alternative" "reddit"
 "[problem]" "frustrated" OR "hate" OR "annoying"
 "[category]" "Product Hunt" "launch"
 "[product type]" "demo" "AI" site:x.com
+"[product type]" "demo" "AI" site:linkedin.com/posts
 "[category]" "before after" OR "workflow"
 ```
 

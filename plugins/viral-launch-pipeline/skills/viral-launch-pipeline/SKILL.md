@@ -1,11 +1,11 @@
 ---
 name: viral-launch-pipeline
-description: Researches, positions, writes, critiques, and packages product launches for X/Twitter using a multi-pass agent pipeline. Use when creating launch posts, launch scripts, demo narratives, viral launch positioning, bold claims, hooks, social distribution plans, or when the user asks to turn a product into a high-attention launch.
+description: Researches, positions, writes, critiques, and packages product launches for X/Twitter and LinkedIn using a multi-pass agent pipeline. Use when creating launch posts, LinkedIn launch posts, X launch threads, launch scripts, demo narratives, viral launch positioning, bold claims, hooks, social distribution plans, or when the user asks to turn a product into a high-attention launch.
 ---
 
 # Viral Launch Pipeline
 
-Run a research-first launch workflow that produces a complete X launch pack: market insights, bold claim, hooks, narrative, demo script, critique history, final post, and distribution plan.
+Run a research-first launch workflow that produces a complete launch pack for X/Twitter, LinkedIn, or both: market insights, bold claim, hooks, narrative, demo script, critique history, platform-specific posts, and distribution plan.
 
 Do not promise virality. Optimize for novelty, clarity, proof, and shareability.
 
@@ -33,7 +33,7 @@ Start by gathering or inferring:
 - Target buyer and painful existing behavior
 - Product workflow or demo steps
 - Differentiators, proof, metrics, founder story, customer quotes
-- Launch constraints: post-only, video script, thread, voice, claims to avoid
+- Launch constraints: target platform, post-only, video script, thread, voice, claims to avoid
 
 If critical product details are missing, ask only for the minimum needed to proceed.
 
@@ -87,7 +87,7 @@ Always include:
 - Research summary with sources
 - Positioning options and selected bold claim
 - Hook iterations with scores
-- Final X post or thread
+- Final X/Twitter post or thread and/or LinkedIn launch post
 - Video/demo script when relevant
 - Weapons Check table
 - Distribution plan

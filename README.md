@@ -2,7 +2,7 @@
 
 [![Install Skill](https://img.shields.io/badge/install-npx%20skills%20add-111827)](#install)
 
-A Codex skill and plugin for building research-driven X/Twitter product launches.
+A Codex skill and plugin for building research-driven X/Twitter and LinkedIn product launches.
 
 The skill runs a full launch workflow: intake, market research, customer-language mining, competitor positioning, bold-claim extraction, hook writing, demo narrative, critique passes, weapons check, and final launch-pack validation.
 
@@ -24,7 +24,7 @@ Restart Codex after install if the skill does not appear immediately.
 
 ## Optional Browser Research
 
-For heavier launch research, install `agent-browser` so the skill can inspect source pages, X posts, Reddit/forum threads, YouTube pages, Product Hunt launches, and competitor sites with compact snapshots:
+For heavier launch research, install `agent-browser` so the skill can inspect source pages, X posts, LinkedIn posts, Reddit/forum threads, YouTube pages, Product Hunt launches, and competitor sites with compact snapshots:
 
 ```bash
 npm install -g agent-browser
@@ -38,7 +38,7 @@ The skill treats this as optional. If `agent-browser` is not installed, it will 
 Invoke it explicitly:
 
 ```text
-Use $viral-launch-pipeline to research, position, write, critique, and finalize an X launch for my product.
+Use $viral-launch-pipeline to research, position, write, critique, and finalize an X and LinkedIn launch for my product.
 ```
 
 To trigger the parallel specialist workflow, ask for the agent pipeline:
@@ -61,7 +61,7 @@ Useful inputs:
 - Research summary with sources
 - Positioning options and selected bold claim
 - Hook iterations with scores
-- Final X post or thread
+- Final X post/thread and/or LinkedIn launch post
 - Demo/video script when relevant
 - Weapons Check table
 - Distribution plan
