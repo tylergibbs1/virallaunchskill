@@ -11,8 +11,10 @@ The skill runs a full launch workflow: intake, market research, customer-languag
 Install with the open skills CLI:
 
 ```bash
-npx skills add tylergibbs1/virallaunchskill --skill viral-launch-pipeline -y
+tmp="$(mktemp -d)" && (cd "$tmp" && npx skills add tylergibbs1/virallaunchskill --skill viral-launch-pipeline -g -a codex --copy -y)
 ```
+
+This runs the installer from a throwaway directory so `npm` does not inherit `package.json` overrides from whatever project you are currently in.
 
 Or install directly in Codex with `$skill-installer`:
 
