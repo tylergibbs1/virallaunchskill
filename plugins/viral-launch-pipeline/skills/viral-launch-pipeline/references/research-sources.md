@@ -3,6 +3,7 @@
 ## Contents
 
 - Evidence rules
+- Retrieval budget
 - Tool order
 - Source map
 - Search patterns
@@ -16,6 +17,27 @@
 - Separate observed evidence from inference.
 - Do not fabricate customer language. Quote sparingly and attribute.
 - Prefer first-party pages, docs, changelogs, customer reviews, Reddit/forum posts, YouTube transcripts, X posts, LinkedIn posts, Product Hunt, app marketplaces, and credible news.
+
+## Retrieval Budget
+
+Use the minimum research needed to support the launch angle.
+
+Start with one broad search per source class that matters for the request:
+
+- Company/product facts
+- Competitors/category claims
+- Customer language
+- Launch/outlier patterns
+
+Search again only when:
+
+- The top results do not answer the core question.
+- A required fact, source, date, capability, competitor claim, or customer phrase is missing.
+- The user asks for exhaustive research or a platform-specific comparison.
+- A hard-to-reach source needs browser inspection.
+- The draft would otherwise contain an important unsupported factual claim.
+
+Do not search again to improve wording, add decorative examples, or support a claim that can safely be made generic.
 
 ## Tool Order
 

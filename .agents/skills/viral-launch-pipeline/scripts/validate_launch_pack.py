@@ -10,6 +10,7 @@ from pathlib import Path
 
 REQUIRED_HEADINGS = [
     "## Executive Summary",
+    "## Assumptions and Placeholders",
     "## Research Summary",
     "## Positioning",
     "### Bold Claim",

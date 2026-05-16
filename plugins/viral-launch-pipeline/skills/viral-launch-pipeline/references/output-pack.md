@@ -8,6 +8,9 @@ Use this structure for the final deliverable.
 ## Executive Summary
 [One paragraph: selected angle, audience, bold claim, and why it should work.]
 
+## Assumptions and Placeholders
+[List any assumptions, missing proof, unsupported metrics, or placeholders that need human/product-team confirmation.]
+
 ## Research Summary
 ### Sources Reviewed
 - [Source](url): why it mattered

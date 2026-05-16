@@ -7,6 +7,7 @@
 - Narrative scorecard
 - Weapons Check
 - Mass-market clarity
+- Evidence and claim integrity
 
 ## Bold Claim Scorecard
 
@@ -94,3 +95,14 @@ Rewrite toward:
 - One idea per sentence
 - Before/after examples
 - Familiar analogies only when accurate
+
+## Evidence and Claim Integrity
+
+Before finalizing, classify every concrete claim:
+
+- **Source-backed**: product facts, metrics, customer outcomes, dates, competitive claims, roadmap status, pricing, integrations, and named customer statements.
+- **Demo-backed**: claims directly proven by the product workflow or provided assets.
+- **Creative framing**: metaphors, narrative contrast, category language, and emotional phrasing.
+- **Assumption/placeholder**: useful but not yet verified.
+
+Rewrite or label unsupported specifics. Creative framing may be bold, but it cannot invent facts.

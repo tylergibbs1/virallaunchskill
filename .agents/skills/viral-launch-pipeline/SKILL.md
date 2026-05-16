@@ -9,6 +9,18 @@ Run a research-first launch workflow that produces a complete launch pack for X/
 
 Do not promise virality. Optimize for novelty, clarity, proof, and shareability.
 
+## Outcome
+
+Success means the user receives a usable launch pack with:
+
+- A source-backed bold claim that is specific, defensible, and non-generic.
+- Platform-native launch drafts for the requested channels.
+- A short evidence trail showing what informed the angle.
+- Clear critique notes showing what was rejected or rewritten.
+- Validation completed or a clear explanation of what could not be checked.
+
+For multi-step work, start with a brief visible update before tools. Make progress with reasonable assumptions; ask only when missing information would materially change the launch angle or create claim risk.
+
 ## Workflow
 
 Copy and update this checklist while working:
@@ -71,12 +83,15 @@ Use [references/scorecards.md](references/scorecards.md) for scoring.
 
 Core rules:
 
+- Distinguish source-backed facts from creative framing.
 - Lead with a specific bold claim, not a generic announcement.
 - Answer in the first beat: what launched, why it matters, why it has not existed like this before.
 - Make the body prove the claim through demo moments, before/after contrast, proof, and specificity.
 - Cut lines that only say the product is powerful, seamless, intelligent, streamlined, or built for modern teams.
 - Show what should be shown visually; do not over-explain demoable behavior.
-- Keep a paper trail: rejected claims, hook iterations, critiques, and why the final version won.
+- Keep the paper trail concise: rejected claims, hook iterations, critiques, and why the final version won.
+
+If support is thin, use placeholders or labeled assumptions instead of inventing metrics, customer outcomes, product capabilities, dates, or competitive claims.
 
 ## Output
 
@@ -102,3 +117,5 @@ python3 scripts/validate_launch_pack.py path/to/launch-pack.md
 ```
 
 Fix validation failures before finalizing. Validation catches missing sections and common generic launch language; it does not replace editorial judgment.
+
+Stop once the launch pack meets the outcome criteria with enough evidence to support concrete claims. Do not keep researching only to improve phrasing or add nonessential examples.
