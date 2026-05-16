@@ -54,7 +54,7 @@ Use the most relevant sources for the category:
 - Company: homepage, docs, blog, changelog, demo videos, founder posts, case studies.
 - Competitors: positioning pages, comparison pages, pricing, reviews, changelogs.
 - Customer language: Reddit, Hacker News, G2/Capterra, app reviews, Discord/forum excerpts supplied by user, support docs, public comments.
-- Viral patterns: X launches, LinkedIn launches, Product Hunt top launches, YouTube outlier videos, high-engagement demo posts, and founder/company launch narratives in adjacent categories.
+- Viral patterns: X launches, LinkedIn launches, Product Hunt top launches, YouTube outlier videos, YouTube Shorts, high-engagement demo posts, and founder/company launch narratives in adjacent categories.
 - Category context: analyst posts, benchmark reports, news, keyword trends when available.
 
 ## Search Patterns
@@ -70,10 +70,13 @@ Run targeted searches such as:
 "[category]" "Product Hunt" "launch"
 "[product type]" "demo" "AI" site:x.com
 "[product type]" "demo" "AI" site:linkedin.com/posts
+"[product type]" "launch" "YouTube"
+"[product type]" "demo" "YouTube"
+"[category]" "YouTube Shorts" "launch"
 "[category]" "before after" OR "workflow"
 ```
 
-For YouTube, look for outliers: videos with unusually high views relative to channel size. Extract title patterns, thumbnail promise, opening hook, and proof sequence.
+For YouTube, look for outliers: videos with unusually high views relative to channel size. Extract title patterns, thumbnail promise, first 5-second hook, retention beats, demo sequence, proof sequence, CTA, and pinned comment patterns.
 
 ## Research Output
 

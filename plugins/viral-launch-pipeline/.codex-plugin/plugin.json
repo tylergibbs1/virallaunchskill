@@ -1,7 +1,7 @@
 {
   "name": "viral-launch-pipeline",
   "version": "0.1.0",
-  "description": "Research-driven product launch workflow for X/Twitter and LinkedIn positioning, hooks, scripts, critique, and distribution.",
+  "description": "Research-driven product launch workflow for X/Twitter, LinkedIn, and YouTube positioning, hooks, scripts, critique, and distribution.",
   "author": {
     "name": "Tyler Gibbs",
     "url": "https://github.com/tylergibbs1"
@@ -16,13 +16,14 @@
     "twitter",
     "x",
     "linkedin",
+    "youtube",
     "copywriting"
   ],
   "skills": "./skills/",
   "interface": {
     "displayName": "Viral Launch Pipeline",
-    "shortDescription": "Research-driven X and LinkedIn launches",
-    "longDescription": "Runs a research-first launch workflow that turns product details into market evidence, bold claims, hooks, demo narrative, critique history, platform-specific X and LinkedIn launch posts, scripts, and a distribution plan.",
+    "shortDescription": "Research-driven social launches",
+    "longDescription": "Runs a research-first launch workflow that turns product details into market evidence, bold claims, hooks, demo narrative, critique history, platform-specific X and LinkedIn launch posts, YouTube scripts, and a distribution plan.",
     "developerName": "Tyler Gibbs",
     "category": "Productivity",
     "capabilities": [
@@ -31,7 +32,7 @@
     ],
     "defaultPrompt": [
       "Use $viral-launch-pipeline for my product launch.",
-      "Create a bold claim and LinkedIn launch post.",
+      "Create YouTube titles and a Shorts launch script.",
       "Critique and strengthen this launch post."
     ],
     "brandColor": "#111827"
