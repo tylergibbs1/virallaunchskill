@@ -54,6 +54,8 @@ If critical product details are missing, ask only for the minimum needed to proc
 
 Use current web research unless the user explicitly provides all source material or asks not to browse. Prefer built-in web search/browsing tools when available. Read [references/research-sources.md](references/research-sources.md) for source types, search patterns, and evidence rules.
 
+If Hermes Tweet / Xquik credentials are already configured, use it as an optional X evidence source for launch examples, customer-language mining, quote-repost candidates, competitor posts, and high-engagement discussion threads. Do not require Hermes Tweet for the workflow; the normal web/search and browser research path remains the default.
+
 Use `agent-browser` only when built-in web tools cannot reach a source reliably, when the page requires interaction, or when screenshot-backed/source-page inspection would materially improve the research. If unavailable, ask before installing global tools.
 
 The research phase must produce:

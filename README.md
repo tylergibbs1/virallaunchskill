@@ -35,6 +35,16 @@ agent-browser install
 
 The skill treats this as optional. If `agent-browser` is not installed, it will continue with normal web/search tools.
 
+## Optional Hermes Tweet Research
+
+If you already use [Hermes Tweet](https://github.com/Xquik-dev/hermes-tweet), the skill can use it as an optional X/Twitter evidence source for launch examples, customer-language mining, quote-repost candidates, competitor posts, and high-engagement threads:
+
+```bash
+XQUIK_API_KEY=xq_... python3 plugins/viral-launch-pipeline/skills/viral-launch-pipeline/scripts/hermes_tweet_research.py search "AI agent launch" --limit 5 --format markdown
+```
+
+This does not replace the default web and browser research flow. It adds a structured X evidence path when `XQUIK_API_KEY` or `HERMES_TWEET_API_KEY` is already configured.
+
 ## Use
 
 Invoke it explicitly:
