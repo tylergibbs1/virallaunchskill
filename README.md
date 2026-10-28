@@ -92,3 +92,7 @@ Validate a generated launch pack:
 ```bash
 python3 .agents/skills/viral-launch-pipeline/scripts/validate_launch_pack.py path/to/launch-pack.md
 ```
+
+## License
+
+[MIT](LICENSE)
